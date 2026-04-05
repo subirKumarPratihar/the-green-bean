@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Green Bean</title>
+
+    <meta
+      name="description"
+      content="Welcome to The Green Bean
+Experience the perfect blend of heritage and innovation. For 20 years, we've been crafting exceptional coffee in a space where community, quality, and passion come together."
+    />
+    <meta name="author" content="Subir Kumar" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icons/faviocn.png"
+      type="image/x-icon"
+    />
+
+    <!-- 
+      - bootstrap web icon CDN 
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- 
+      - Start of header 
+    -->
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="assets/images/icons/the-Green-Bean-logo.png"
+            alt="The Green Bean Logo"
+          />
+
+          <div class="logo-text">
+            <h1>The Green Bean</h1>
+
+            <p>Est. 2000</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 
+        - Stat of navbar 
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="menu.html">Menu</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- 
+        - End of navbar 
+      -->
+    </header>
+    <!-- 
+      - End of header 
+    -->
+
+    <!-- 
+      - Start of main
+    -->
+    <main>
+      <p>GET IN TOUCH</p>
+
+      <h2>Contact Us</h2>
+
+      <p>
+        We'd love to hear from you! Whether you have questions, feedback, or
+        just want to chat about coffee, reach out to us.
+      </p>
+
+      <!-- 
+        - visit us section
+      -->
+      <section>
+        <h3>Visit Us</h3>
+
+        <ul>
+          <li>
+            <div class="visit-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div class="visit-info">
+              <h4>Location</h4>
+
+              <address>
+                123 Heritage Lane <br />
+                Portland, OR 97214 <br />
+                India
+              </address>
+            </div>
+          </li>
+
+          <li>
+            <div class="visit-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+
+            <div class="visit-info">
+              <h4>Phone</h4>
+
+              <a href="tel:+91 12345 67890"> +91 12345 67890</a>
+
+              <p>Call us for reservations or questions</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="visit-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <div class="visit-info">
+              <h4>Email enquiry</h4>
+
+              <a href="mailto:hello@thegreenbean.com">hello@thegreenbean.com</a>
+
+              <p>We'll respond within 24 hours</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="visit-icon">
+              <i class="bi bi-clock"></i>
+            </div>
+
+            <div class="visit-info">
+              <h4>Hours</h4>
+
+              <p>Monday - Friday : 7am - 7pm</p>
+
+              <p>Saturday - Sunday : 8am - 9pm</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 
+        - message form section
+      -->
+      <section>
+        <h3>Send Us a Message</h3>
+
+        <p>Fill out the form below and we'll get back to you soon!</p>
+
+        <form
+          action="https://httpbin.org/post"
+          method="post"
+          autocomplete="off"
+        >
+          <div>
+            <label for="name"
+              >Your Name <span class="requird-star">*</span></label
+            >
+
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your full name"
+              autofocus
+            />
+          </div>
+
+          <div>
+            <label for="email"
+              >Email Address <span class="requird-star">*</span></label
+            >
+
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div>
+            <label for="roast"
+              >Favorite Roast <span class="requird-star">*</span></label
+            >
+
+            <select name="FavoriteRoast" id="roast">
+              <option>Select your favorite roast...</option>
+
+              <option value="Light Roast">Light Roast</option>
+
+              <option value="Medium-Light Roast">Medium-Light Roast</option>
+
+              <option value="Medium Roast">Medium Roast</option>
+
+              <option value="Medium-Dark Roast">Medium-Dark Roast</option>
+
+              <option value="Dark Roast">Dark Roast</option>
+
+              <option value="No Preference">No Preference</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message"
+              >Favorite Roast <span class="requird-star">*</span></label
+            >
+
+            <textarea
+              name="userMessage"
+              id="message"
+              placeholder="Tell us your favorite order, ask a question, or share your feedback..."
+            ></textarea>
+          </div>
+
+          <p>Let us know what's on your mind or what you'd like to order!</p>
+
+          <button type="submit">
+            <i class="bi bi-send"></i>
+            Send Message
+          </button>
+
+          <p>
+            All fields marked with <span class="requird-star">*</span> are
+            required
+          </p>
+        </form>
+      </section>
+
+      <!-- 
+        - find of Map
+      -->
+      <section>
+        <h2>Find Us on the Map</h2>
+
+        <!-- Embed from google map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5291.340488416819!2d78.04375136658624!3d27.172458137560813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e1!3m2!1sen!2sin!4v1775333194645!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <!-- 
+        - private events
+      -->
+      <section>
+        <h2>Private Events & Catering</h2>
+
+        <p>
+          Interested in hosting a private event or need catering for your next
+          gathering? We offer custom coffee bars, curated menu selections, and
+          personalized service for groups of all sizes.
+        </p>
+
+        <a href="mailto:events@thegreenbean.com">events@thegreenbean.com</a>
+      </section>
+    </main>
+    <!-- 
+      - End of main
+    -->
+
+    <!-- 
+      - Start of footer
+    -->
+    <footer>
+      <aside>
+        <section>
+          <h2>The Green Beam</h2>
+
+          <p>
+            Serving exceptional coffee since 2006. A heritage boutique coffee
+            shop dedicated to quality, community, and the perfect cup.
+          </p>
+        </section>
+
+        <section class="quick-link">
+          <h2>Quick Links</h2>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+
+        <section class="visit-us">
+          <h2>Visit Us</h2>
+
+          <address>
+            123, Heritage Lane <br />
+            Portland - 97214 <br />
+            India
+          </address>
+
+          <div class="visit-time">
+            <p>Monday - Friday : 7am - 7pm</p>
+            <p>Saturday - Sunday : 8am - 9pm</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- 
+        - Copyright info 
+      -->
+      <div>
+        <div class="copyright-info">
+          <p>
+            &copy; <span class="current-year">2026</span> The Green Bean. All
+            rights reserved. Crafted with passion since 2000.
+          </p>
+        </div>
+
+        <div class="social-link">
+          <ul>
+            <li class="social-icon" title="Facebook">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+
+            <li class="social-icon" title="Instagram">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+
+            <li class="social-icon" title="Twitter - X">
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+      - End of footer
+    -->
+  </body>
+</html>
