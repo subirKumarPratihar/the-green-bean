@@ -1,4 +1,4 @@
-<h1 align="center">🚀 The Green Bean</h1>
+<h1 align="center">🚀 Comming Soon</h1>
 <p align="center" > 
-  <b>We Are Almost Ready to write README.md!</b>
+  <b>We are almost ready to write README.md!</b>
 </p>
